@@ -3,15 +3,16 @@
 /**
  * print_alphabet
  * Description: prints the alphabet, in lowercase, followed by a new line
- * Return: Always (0) Success
+ * Return: void 
 */
 
 void print_alphabet(void)
 {
-    char letter = 'a';
-    while (letter <= 'z') {
-        printf("%c", letter);
-        letter++;
+    char character;
+
+    for (character = 'a'; character = 'z'; character++)
+    {
+    	_putchar(character);
     }
-    printf("\n");
+    _putchar('\n');
 }
